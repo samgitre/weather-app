@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> JavaScript Bootcamp</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+    <link href="public/css/bootstrap.css" rel="stylesheet">
+    <link href="public/css.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="row col-md-offset-2 divpad">
+
+        <div class="col-md-9 f-col-top">
+        <h1 class="fcol col-md-offset-2 "> The Ultimate Weather App</h1>
+            </div>
+    </div>
+
+    <div class="row col-md-offset-2">
+        <div class="col-md-10">
+            <hr>
+            <div class="row">
+                <div class="col-md-9">
+                    <input type="text" class="form-control" value="" id="city" placeholder="please enter city name">
+                </div>
+                <div class="col-md-1">
+                    <button class="btn btn-primary divbtn">Get Weather</button>
+                </div>
+            </div>
+    </div>
+</div>
+
+    <div class="row col-md-offset-2 divpad">
+
+        <div class="col-md-9 f-col-small">
+
+            <div id="weather">
+                <h1 class="col-md-offset-4" id="weatherCity"></h1>
+
+
+                <div class="row">
+                    <div class="col-md-4">Country :</div>
+                    <h3 class="col-md-offset-4" id="weatherCountry"></h3>
+
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-4">Temperature :</div>
+                    <h3 class="col-md-offset-4" id="weatherTemperature"></h3>
+
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-4">Humidity :</div>
+                    <h3 class="col-md-offset-4" id="humidity"></h3>
+
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-4">Description :</div>
+                    <h3 class="col-md-offset-4" id="weatherDescription"></h3>
+
+                </div>
+                </div>
+        </div>
+
+
+
+    </div>
+
+    </div>
+
+<script src="init.js"></script>
+<script src="weather-data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
